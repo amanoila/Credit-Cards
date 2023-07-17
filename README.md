@@ -1,4 +1,4 @@
-# Proiect Bază de date cont bancar
+# Bază de date cont bancar
 ## by Andreea Manoilă
 ### Descrierea proiectului
 
