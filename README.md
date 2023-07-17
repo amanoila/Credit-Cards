@@ -1,5 +1,5 @@
-# Proiect Gestiunea contului bancar
-
+# Proiect Bază de date cont bancar
+## by Andreea Manoilă
 ### Descrierea proiectului
 
 Programul primește drept bază de date un document Excel. Fiecare foaie conține 
