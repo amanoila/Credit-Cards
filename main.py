@@ -53,7 +53,7 @@ class CreditCard:
 	def withdrawal(self, amount, req_day=datetime.today()):
 		return 'Withdrawal request rejected. Current balance too low. ' \
 			if self.current_amount() < amount \
-			else self.new_transaction(Transaction(req_day, -amount, 'Deposit'))
+			else self.new_transaction(Transaction(req_day, -amount, 'Withdrawal'))
 
 	def current_amount(self):
 		amount = 0
@@ -104,3 +104,5 @@ pers3.withdrawal(250)
 pers1.statement()
 cards_list.save('output.xlsx')
 pers2.statement(datetime(2023, 1, 1), datetime(2023, 3, 15))
+pers4 = CreditCard()
+pers4.load_from_excel(cards_list['4'])
